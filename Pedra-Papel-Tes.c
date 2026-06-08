@@ -14,7 +14,6 @@ int verificarVitoriaRodada(int j1, int j2) {
     else if (j1 == TESOURA  && j2 == PAPEL)     return 1;
 }
 
-
 int main() {
     printf("%i", verificarVitoriaRodada(PEDRA, PAPEL));
     return 0;

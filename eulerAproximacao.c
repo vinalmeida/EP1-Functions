@@ -14,11 +14,11 @@ double aproximarEuler(int k) {
         double num = 1;
         int i;
         int stop = k - 1;
-          
+
         for(i = 0; i <= stop; i++) {
             sum += num / fatorial(i);
         }
-
+        
         return sum;
     }
     else {
@@ -27,6 +27,6 @@ double aproximarEuler(int k) {
 }
 
 int main() {
-    printf("%f", aproximarEuler(10));
+    printf("%f", aproximarEuler(0));
     return 0;
 }

@@ -4,7 +4,6 @@
 #define PAPEL 1
 #define TESOURA 2
 
-
 int verificarVitoriaRodada(int j1, int j2) {
     if      (j1 == j2)                          return 0;
     else if (j1 == PEDRA    && j2 == PAPEL)     return 2;
@@ -38,12 +37,10 @@ int melhorDeTres(int j1_r1,  int j2_r1, int j1_r2,  int j2_r2, int j1_r3,  int j
         case 2: vit2++; break; 
     }
 
-    
     if (vit1 == vit2)   return 0;
     else if (vit1 > vit2) return 1;
     else if (vit1 < vit2) return 2;
 }  
-
 
 int main() {
     printf("%i", melhorDeTres(2,1,2,1,2,1));
